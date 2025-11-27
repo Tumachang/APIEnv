@@ -1,10 +1,11 @@
-
+# render.yaml
 services:
   - type: web
-    name: fastapi-demo
-    runtime: docker
-    dockerfilePath: Dockerfile
-    envVars:
-      - key: PORT
-        value: 8000
-    # healthCheckPath intentionally omitted per requirement
+    name: fastapi-render
+    env: docker
+    region: singapore
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /
+    previews:
+      enabled: true
