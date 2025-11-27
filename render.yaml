@@ -1,11 +1,11 @@
-# render.yaml
+
 services:
   - type: web
-    name: fastapi-render
-    env: docker
-    region: singapore
+    name: fastapi-service
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "bash start.sh"
     plan: free
     autoDeploy: true
-    healthCheckPath: /
-    previews:
-      enabled: true
+    envVars:
+      - key: PYTHONUNBUFFERED
