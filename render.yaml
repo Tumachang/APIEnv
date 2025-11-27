@@ -1,0 +1,10 @@
+
+services:
+  - type: web
+    name: fastapi-demo
+    runtime: docker
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: PORT
+        value: 8000
+    # healthCheckPath intentionally omitted per requirement
