@@ -11,7 +11,7 @@ from . import auth
 
 # === 將你的靜態網站網域填入（Render 的 Static Site 網域） ===
 ALLOWED_ORIGINS = [
-    "https://frontend-rjzs.onrender.com",  # TODO: 換成你的靜態站網址
+    "https://frontend-rjzs.onrender.com/login.html",  # TODO: 換成你的靜態站網址
 ]
 
 app = FastAPI(title="FastAPI Auth Service")
