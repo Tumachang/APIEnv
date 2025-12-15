@@ -4,7 +4,7 @@ services:
     name: fastapi-service
     env: python
     buildCommand: "pip install -r requirements.txt"
-    #startCommand    #startCommand
+    startCommand    #startCommand
     plan: free
     autoDeploy: true
     envVars:
